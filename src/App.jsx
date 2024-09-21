@@ -1,10 +1,6 @@
 import "./App.css";
 import Counter from "./components/Counter";
-import ExponentTwo from "./components/ExponentTwo";
-import ExponentThree from "./components/ExponentThree";
-import ExponentFour from "./components/ExponentFour";
-import ExponentFive from "./components/ExponentFive";
-import ExponentSix from "./components/ExponentSix";
+import Exponents from "./components/Exponents"
 import { useState } from "react";
 
 function App () {
@@ -23,11 +19,11 @@ function App () {
       <h2><em>Exponents</em></h2>
 
       <div className="container">
-        <ExponentTwo count={count} />
-        <ExponentThree count={count} />
-        <ExponentFour count={count} />
-        <ExponentFive count={count} />
-        <ExponentSix count={count} />
+        <Exponents count={count} exponent={2} />
+        <Exponents count={count} exponent={3} />
+        <Exponents count={count} exponent={4} />
+        <Exponents count={count} exponent={5} />
+        <Exponents count={count} exponent={6} />
       </div>
     </div>
   );
